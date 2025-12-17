@@ -25,8 +25,8 @@ except Exception:
     MISSING_EXTRACTOR_LIBS.append('python-docx')
 
 # loading models
-clf = pickle.load(open('clf.pkl', 'rb'))
-tfidf = pickle.load(open('tfidf.pkl', 'rb'))
+clf = pickle.load(open('resume_scanner/clf.pkl', 'rb'))
+tfidf = pickle.load(open('resume_scanner/tfidf.pkl', 'rb'))
 
 # Mapping of category IDs to human-readable names (legacy/fallback)
 CATEGORY_NAMES = [
